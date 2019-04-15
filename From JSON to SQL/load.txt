@@ -1,0 +1,12 @@
+.separator |
+.import Users.dat USERS
+update USERS set Location = null where Location = "Null";
+update USERS set Country = null where Country = "Null";
+.separator |
+.import Auctions.dat AUCTIONS
+update AUCTIONS set BuyPrice = null where BuyPrice = 0.0;
+.separator |
+.import Bids_InAuction.dat BIDS
+.separator |
+.import Item_Category.dat CATEGORY
+

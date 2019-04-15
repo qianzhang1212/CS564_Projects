@@ -1,0 +1,7 @@
+SELECT COUNT(*)
+FROM USERS
+WHERE UserID in
+  (
+    SELECT SellerID
+    FROM AUCTIONS
+  ) >0 AND Rating>1000;
